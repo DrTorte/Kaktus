@@ -1,0 +1,205 @@
+html{
+    height:100%;
+}
+
+body{
+    background-color: #c2b280;
+    height:100%;
+}
+
+#bodyContent{
+    width:80%;
+    margin-bottom:5%;
+    margin-left:10%;
+    margin-right:10%;
+    height:100%;
+    min-height:100%;
+    bottom:0px;
+}
+
+.dataContainer{
+    background-color: rgba(255,255,255,0.3);
+}
+
+.colHeader{
+    font-family: 'Economica', sans-serif;
+    text-align:center;
+    font-weight:bold;
+}
+
+.groupControls{
+    text-align:right;
+}
+
+button {
+    font-family: 'Economica', sans-serif;
+}
+
+.form-button-right{
+    float:right;
+}
+
+.hidden{
+    display:none;
+}
+
+.taskItemContainer, .listContainer{
+    font-family:'Economica', sans-serif;
+}
+
+.taskItemContainer, .listContainer{
+    margin-bottom:3px;
+    border:3px;
+    border-style:solid;
+    border-radius:6px;
+    max-width:70%;
+    margin-left:15%;
+    display:block;
+    background-color:white;
+}
+
+.taskItemContainer, .listContainer{
+    border-color:green;
+}
+
+.taskItemContainer:hover, .listContainer:hover{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: greenHover;
+}
+
+.taskItemContainer .inactiveTask{
+    border-color:red;
+}
+
+.taskItemContainer .inactiveTask:hover{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name: redHover;
+}
+
+.taskItem, .listItem{
+    display:inline-block;
+    padding-top:.5em;
+    padding-bottom:.5em;
+    font-size:1.2em;
+    width:100%;
+}
+
+.taskName, .listName{
+    padding-left:2em;
+}
+.taskName:hover{
+    cursor:pointer;
+}
+
+.taskDescription{
+    display:inline-block;
+    width:100%;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.taskDue{
+    border-color:red;
+}
+
+.actionButtons{
+    display:inline-block;
+    float:right;
+    margin-right:.5em;
+}
+
+.actionButton{
+    padding-left:.25em;
+    padding-right:.25em;
+    margin-right:.25em;
+}
+
+.actionButton:last-child{
+    margin-right:0px;
+}
+
+.actionButton:hover{
+    cursor:pointer;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+/* dialog! */
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.no-close .ui-dialog-titlebar{
+    display:none;
+}
+
+/*tabs */
+.ui-tabs .no-tab-bkg{
+    background:none;
+    border:none;
+    width:100%;
+}
+.ui-tabs .no-tab-bkg > li{
+    margin:0 0 0 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav .twoTabs{
+    padding:0px;
+    width:50%;
+    margin:0 0 0 0;
+    background:none;
+}
+
+.ui-tabs .ui-tabs-nav .twoTabs a{
+    width:100%;
+    background:none;
+}
+
+.loginTabs{
+    background-color: rgba(0,255,0,0.4) !important;
+}
+
+.loginTabs.ui-state-active{
+    background-color: rgba(0,255,0,0.8) !important;
+}
+
+.loginTabContent{
+    min-height:20em;
+}
+/*animation stuff*/
+@keyframes greenHover{
+    0% {
+        background-color:white;
+    }
+    30%{
+        background-color: rgba(0,255,0,0.8);
+    }
+    50%{
+        background-color: rgba(0,255,0,0.6);
+    }
+    100%
+    {
+        background-color: rgba(0,255,0,0.4);
+    }
+}
+
+@keyframes redHover {
+    0% {
+        background-color:white;
+    }
+    30%{
+        background-color: rgba(255,0,0,0.8);
+    }
+    50%{
+        background-color: rgba(255,0,0,0.6);
+    }
+    100%
+    {
+        background-color: rgba(255,0,0,0.4);
+    }
+}
